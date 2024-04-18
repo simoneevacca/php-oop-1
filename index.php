@@ -2,6 +2,9 @@
 
 require_once __DIR__ . '/Models/Production.php';
 require_once __DIR__ . '/db.php';
+require_once __DIR__ . '/Models/Genre.php';
+
+
 
 
 
@@ -23,18 +26,19 @@ require_once __DIR__ . '/db.php';
 
 <body>
 
-    <div><?= $starWors->getData(); ?></div>
-    <div><?= $killBill->getData(); ?></div>
-    <div><?= $kinkLion->getData(); ?></div>
 
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <?php foreach ($productions as $key => $prod): ?>
-            <div class="col-4">
-                    <div class="card">
-                        <div><?=$prod['title']?></div>
-                        <div><?=$prod['language']?></div>
-                        <div><?=$prod['vote']?></div>
+            <div class="col-4 ">
+                    <div class="card text-center mx-auto py-3 mt-5" style="width: 18rem;">
+                        <div>Titolo: <?=$prod['title']?></div>
+                        <div>Lingua: <?=$prod['language']?></div>
+                        <div>Voto: <?=$prod['vote']?></div>
+                        <div>Genere: <?=$prod['name']?></div>
+                        <div>Descrizione: <?=$prod['description']?></div>
+
+
                     </div>
                     
                 </div>

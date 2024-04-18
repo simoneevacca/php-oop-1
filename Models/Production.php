@@ -6,10 +6,14 @@ class Production
     public $language;
     public $vote;
 
-    public function __construct($title, $language, $vote){
+    public $genre;
+
+    public function __construct($title, $language, $vote, Genre $genre){
         $this->title = $title;
         $this->language = $language;
         $this->vote = $vote;
+        $this->genre = $genre;
+        
 
     }
 
@@ -27,11 +31,16 @@ class Production
         $title = $this->title;
         $language = $this->language;
         $vote = $this->vote;
+        $name = $this->genre->name;
+        $description = $this->genre->description;
+
 
         return [
             'title' => $title,
             'language'=> $language,
-            'vote'=> $vote
+            'vote'=> $vote,
+            'name'=> $name,
+            'description'=> $description,
         ];
 
     }
