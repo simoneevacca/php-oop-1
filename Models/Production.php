@@ -23,4 +23,17 @@ class Production
 
     }
 
+    public function getDataObject(){
+        $title = $this->title;
+        $language = $this->language;
+        $vote = $this->vote;
+
+        return [
+            'title' => $title,
+            'language'=> $language,
+            'vote'=> $vote
+        ];
+
+    }
+
 }

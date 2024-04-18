@@ -1,10 +1,9 @@
 <?php
 
 require_once __DIR__ . '/Models/Production.php';
+require_once __DIR__ . '/db.php';
 
-$starWors = new Production('Star Wars', 'English', 9);
-$killBill = new Production('Kill Bill', 'English', 7);
-$kinkLion = new Production('The King Lion', 'English', 6);
+
 
 
 
@@ -22,7 +21,7 @@ $kinkLion = new Production('The King Lion', 'English', 6);
     <div><?=$starWors->getData();?></div>
     <div><?=$killBill->getData();?></div>
     <div><?=$kinkLion->getData();?></div>
-
+    
     
 
 </body>
