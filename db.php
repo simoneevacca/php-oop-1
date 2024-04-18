@@ -14,4 +14,3 @@ $productions = [];
 $productions[] = $starWors->getDataObject();
 $productions[] = $kinkLion->getDataObject();
 $productions[] = $killBill->getDataObject();
-var_dump($productions);
