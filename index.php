@@ -3,6 +3,7 @@
 require_once __DIR__ . '/Models/Production.php';
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/Models/Genre.php';
+require_once __DIR__ . '/Models/TVserie.php';
 
 
 
@@ -37,6 +38,11 @@ require_once __DIR__ . '/Models/Genre.php';
                         <div>Voto: <?=$prod['vote']?></div>
                         <div>Genere: <?=$prod['name']?></div>
                         <div>Descrizione: <?=$prod['description']?></div>
+                        <div><?=$prod['profit']?></div>
+                        <div><?=$prod['duration']?></div>
+                        <div><?=$prod['seasons']?></div>
+
+
 
 
                     </div>
