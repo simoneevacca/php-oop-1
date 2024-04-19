@@ -1,16 +1,6 @@
 <?php
 
-require_once __DIR__ . '/Models/Production.php';
 require_once __DIR__ . '/db.php';
-require_once __DIR__ . '/Models/Genre.php';
-require_once __DIR__ . '/Models/TVserie.php';
-
-
-
-
-
-
-
 
 
 ?>
@@ -30,7 +20,7 @@ require_once __DIR__ . '/Models/TVserie.php';
 
     <div class="container">
         <div class="row ">
-            <?php foreach ($productions as $key => $prod): ?>
+            <?php foreach ($productions as $prod): ?>
             <div class="col-4 ">
                     <div class="card text-center mx-auto py-3 mt-5" style="width: 18rem;">
                         <div>Titolo: <?=$prod['title']?></div>
