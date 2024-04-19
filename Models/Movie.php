@@ -32,7 +32,7 @@ public function getDataObject(){
         'vote'=> $vote,
         'name'=> $name,
         'description'=> $description,
-        'profit'=> 'Profitto:' . ' ' . $profit,
+        'profit'=> 'Profitto:' . ' ' . $profit . '€',
         'duration'=> 'Durata:' . ' ' . $duration,
 
     ];
